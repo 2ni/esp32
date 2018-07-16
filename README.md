@@ -8,16 +8,18 @@
 make st
 ```
 
-# INITIAL SETUP
+# Information used to setup
+
+### INITIAL SETUP
 pio boards
 pio init --board esp32dev
 
-# DEBUGGING
+### DEBUGGING
 espefuse.py --port /dev/cu.wchusbserial1420 summary
 esptool.py flash_id
 https://github.com/espressif/esptool/wiki/SPI-Flash-Modes
 
-# Flash sizes
+### Flash sizes
 Initially I had issues with the flash sizes.
 
 https://github.com/espressif/esptool#flash-modes
