@@ -1,12 +1,17 @@
 # ESP32 playground
+All examples are in modules/
+- base: general functions used/needed across the examples
 - blink: simple blinking of LED on GPIO5
 - wifi: connecting to pre-defined wifi network
+- i2c_scanner: i2c scanner which shows address
 
 # Usage
 ```
-./activate modules/<files you want to compile>
+./activate modules/<file(s) you want to compile>
 make st
 ```
+PS: The common base functions are always activated,
+you don't need to explicitely add them
 
 # Information used to setup
 

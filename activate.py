@@ -21,6 +21,10 @@ os.chdir(os.path.dirname(os.path.realpath(__file__)))
 # unlink any existing file
 os.system('find src/ -type l -delete')
 
+# always link common functions
+for f in os.listdir('modules/common/'):
+    os.system('ln -s ../{f} src/'.format(f=f))
+
 # link each given file in src
 for f in args.files:
-    os.system('ln -s ../{f} src/'.format(f=f.name))
+    os.system('ln -fs ../{f} src/'.format(f=f.name))
