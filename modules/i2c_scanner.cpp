@@ -58,7 +58,7 @@ void setup() {
   DL("Booting.");
   blink();
 
-  connect_to_wifi();
+  //connect_to_wifi();
 
   DL("I2C Scanner to scan for devices");
 }
