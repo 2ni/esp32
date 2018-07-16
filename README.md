@@ -3,10 +3,10 @@
 - wifi: connecting to pre-defined wifi network
 
 # Usage
-<code>
+```
 ./activate modules/<files you want to compile>
 make st
-</code>
+```
 
 # INITIAL SETUP
 pio boards
