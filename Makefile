@@ -4,7 +4,7 @@ compile:
 	platformio run
 
 # eg make st port=1
-st: serial terminal
+st: compile serial terminal
 
 serial:
 	@./handle_serial.py --port=$$port

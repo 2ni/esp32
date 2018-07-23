@@ -1,0 +1,3 @@
+[submodule "lib/lsm303c"]
+	path = lib/lsm303c
+	url = git@github.com:2ni/lsm303c.git
